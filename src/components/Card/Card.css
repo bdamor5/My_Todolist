@@ -1,0 +1,82 @@
+.carditem{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2rem;    
+}
+
+.carditem ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.carditem li{
+    list-style: none;
+    color: lavenderblush;
+    background:mediumpurple;
+    width: 30%;
+    overflow-y: auto;
+    border-radius: 5px;
+    margin: 1% 0;
+}
+
+.carditem li:hover{
+    background:lavenderblush;
+    color:lightcoral;
+}
+
+.carditem .arrow{
+    color:mediumpurple;
+    font-size: 2rem;
+}
+
+.carditem .edit{
+    color:lavenderblush;
+    background:yellowgreen;
+    font-size: 2rem;
+    border:1px solid lavenderblush;
+    border-radius: 5px;
+    margin: 0 1%;
+}
+
+.carditem .edit:hover{
+    color:yellowgreen;
+    background: lavenderblush;
+    transform: rotateZ(360deg);
+    transition: all 0.6s ease-in-out;
+    cursor: pointer;
+}
+
+.carditem .edit:not(:hover){
+    transform: rotateZ(0deg);
+    transition: all 1s ease-in-out;
+}
+
+.carditem .delete{
+    color:lavenderblush;
+    background:red;
+    font-size: 2rem;
+    border:1px solid lavenderblush;
+    border-radius: 5px;
+}
+
+.carditem .delete:hover{
+    color:red;
+    background: lavenderblush;
+    cursor: pointer;
+    transform: rotateZ(-360deg);
+    transition: all 0.6s ease-in-out;
+}
+
+.carditem .delete:not(:hover){
+    transform: rotateZ(0deg);
+    transition: all 1s ease-in-out;
+}
+
+@media(max-width:993px){
+    .carditem li{
+        width: 40%;
+        font-size: 1.5rem;
+    }
+}
+

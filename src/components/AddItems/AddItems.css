@@ -1,0 +1,126 @@
+.additems{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+}
+
+.additems h3{
+    color: lavenderblush;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-right:2%;
+}
+
+.additems .form-control{
+    width: 20%;
+    background: lavenderblush;
+    border-radius: 4px;
+    letter-spacing: 0.1rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.additems .addicon{
+    margin-left: 1%;
+    color:lavenderblush;
+    background:mediumseagreen;
+    font-size: 2rem;
+    border:1px solid lavenderblush;
+    border-radius: 5px;
+}
+
+.additems .addicon:hover{
+    color:mediumseagreen;
+    background:lavenderblush;
+    border:1px solid mediumseagreen;
+    cursor: pointer;
+    transform: rotateZ(90deg);
+    transition: all 0.45s ease-in-out;
+}
+
+.additems .addicon:not(:hover){
+    transform: rotateZ(-90deg);
+    transition: all 0.45s ease-in-out;
+}
+
+.additems .clearicon{
+    margin-left: 1%;
+    color:lavenderblush;
+    background:crimson;
+    font-size: 2.1rem;
+    border-radius: 50%;
+}
+
+.additems .clearicon:hover{
+    color:crimson;
+    background:lavenderblush;
+    cursor: pointer;
+    transform: rotateZ(-90deg);
+    transition: all 0.45s ease-in-out;
+}
+
+.additems .clearicon:not(:hover){
+    transform: rotateZ(90deg);
+    transition: all 0.45s ease-in-out;
+}
+
+@media(max-width:1000px){
+    .additems .form-control{
+        width: 30%;
+        background: lavenderblush;
+        border-radius: 4px;
+        letter-spacing: 0.1rem;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+}
+
+.item{
+    display: grid;
+    place-items: center;
+}
+
+.item .btn{
+    background:mediumpurple;
+    color: lavenderblush;
+    text-align: center;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    
+}
+
+.item .btn:hover{
+    background: lavenderblush;
+    color: mediumpurple;
+}
+
+.additems .edit{
+    color:lavenderblush;
+    background:yellowgreen;
+    font-size: 2rem;
+    border:1px solid lavenderblush;
+    border-radius: 5px;
+    margin-left:1%;
+}
+
+.additems .edit:hover{
+    color:yellowgreen;
+    background: lavenderblush;
+    transform: rotateZ(360deg);
+    transition: all 0.6s ease-in-out;
+    cursor: pointer;
+}
+
+.additems .edit:not(:hover){
+    transform: rotateZ(0deg);
+    transition: all 1s ease-in-out;
+}
+
+@media(max-width:993px) {
+    .item .btn{
+        
+        font-size: 1.1rem;
+    }      
+}
+
+

@@ -1,0 +1,38 @@
+.header{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color:lavenderblush;
+    color: lightcoral;
+    padding: 0.7%;
+    border-radius: 10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 7px rgba(0,0,0,0.2);
+}
+
+.header .icon{
+    font-size:3rem;
+}
+
+.header h2{
+    font-size: 2rem;
+}
+
+.header h2:hover,
+.header .icon:hover{
+    cursor: pointer;
+}
+
+.header:hover{
+    box-shadow: 0 0 9px rgba(0,0,0,0.6);
+}
+
+@media(max-width:780px){
+    .header .icon{
+        font-size:2.5rem;
+    }
+    
+    .header h2{
+        font-size: 1.5rem;
+    }
+}
